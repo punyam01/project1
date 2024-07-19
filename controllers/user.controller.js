@@ -1,6 +1,6 @@
-const getAllProducts = async (req,res) =>{
+const getAllData = async (req,res) =>{
     res.status (200).json ({ msg :"i am controller "})
 };
 
 
-module. exports = {getAllProducts}
+module.exports = {getAllData}

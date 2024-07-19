@@ -9,11 +9,7 @@ const userroutes = require("./routes/user.routes");
 
 app.use("/api/v1/users" , userroutes);
 
-// app.get('/', (req, res) => {
-//     console.log('Request receieved at root');
-//     res.send('Hello World23!')
-//   })
-  
+
 const start = async  () => {
   try {
         await app.listen(PORT, () => {
