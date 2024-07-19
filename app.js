@@ -4,10 +4,15 @@ const app = express ();
 
 const PORT = 8000;
 
-app.get('/', (req, res) => {
-    console.log('Request receivfljalj at root');
-    res.send('Hello World23!')
-  })
+// adding routes fxn 
+const userroutes = require("./routes/user.routes");
+
+app.use("/api/v1/users" , userroutes);
+
+// app.get('/', (req, res) => {
+//     console.log('Request receieved at root');
+//     res.send('Hello World23!')
+//   })
   
 const start = async  () => {
   try {
