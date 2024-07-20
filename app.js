@@ -1,9 +1,10 @@
 
 const express = require('express')
+const mongoose = require('mongoose')
 const app = express ();
 require('dotenv').config()
+const dbConnect = require ('./db/index')
 
-// const PORT = 8000;
 
 // adding routes fxn 
 const userroutes = require("./routes/user.routes");
@@ -23,3 +24,4 @@ const start = async  () => {
 start();
 
 
+dbConnect()
