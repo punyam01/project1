@@ -6,6 +6,8 @@ require('dotenv').config()
 const dbConnect = require ('./db/index')
 
 
+
+
 // adding routes fxn 
 const userroutes = require("./routes/user.routes");
 
